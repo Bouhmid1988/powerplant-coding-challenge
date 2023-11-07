@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerPlant.API", "PowerPlant.API\PowerPlant.API.csproj", "{5B860575-F403-441A-A0DC-F832309F97D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerPlantCodingChallenge.API", "PowerPlant.API\PowerPlantCodingChallenge.API.csproj", "{5B860575-F403-441A-A0DC-F832309F97D5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E8A245E7-B8CB-44A6-B377-D656E0C0E321}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C5B08E6E-769D-494D-AABC-63DD91BFCAC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPlant.Test", "PowerPlant.Test\PowerPlant.Test.csproj", "{3574547D-5820-4B04-A64D-28546100B26A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPlantCodingChallenge.Test", "PowerPlant.Test\PowerPlantCodingChallenge.Test.csproj", "{3574547D-5820-4B04-A64D-28546100B26A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

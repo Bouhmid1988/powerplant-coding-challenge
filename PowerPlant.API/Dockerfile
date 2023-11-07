@@ -6,16 +6,16 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["PowerPlant.API/PowerPlant.API.csproj", "PowerPlant.API/"]
-RUN dotnet restore "PowerPlant.API/PowerPlant.API.csproj"
+COPY ["PowerPlantCodingChallenge.API/PowerPlantCodingChallenge.API.csproj", "PowerPlantCodingChallenge.API/"]
+RUN dotnet restore "PowerPlantCodingChallenge.API/PowerPlantCodingChallenge.API.csproj"
 COPY . .
-WORKDIR "/src/PowerPlant.API"
-RUN dotnet build "PowerPlant.API.csproj" -c Release -o /app/build
+WORKDIR "/src/PowerPlantCodingChallenge.API"
+RUN dotnet build "PowerPlantCodingChallenge.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "PowerPlant.API.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "PowerPlantCodingChallenge.API.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "PowerPlant.API.dll"]
+ENTRYPOINT ["dotnet", "PowerPlantCodingChallenge.API.dll"]
