@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PowerPlant.API\PowerPlantCodingChallenge.API.csproj" />
+  </ItemGroup>
+
 </Project>
